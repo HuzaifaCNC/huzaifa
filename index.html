@@ -1,0 +1,862 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muhammad Huzaifa — Digital Marketing Manager Portfolio</title>
+<meta name="description" content="Portfolio for Muhammad Huzaifa, a Dubai-based digital marketing professional specializing in paid media, SEO, CRM automation, property photography and videography, and lead generation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg-0:#070807;
+    --bg-1:#0c0e0c;
+    --bg-2:#101210;
+    --card:#111311;
+    --card-2:#151715;
+    --line:rgba(255,255,255,0.12);
+    --line-soft:rgba(255,255,255,0.08);
+    --ink:#f7f7f0;
+    --ink-dim:rgba(247,247,240,0.62);
+    --ink-faint:rgba(247,247,240,0.46);
+    --accent:#d7ff3f;
+    --accent-dim:rgba(215,255,63,0.18);
+    --radius-lg:26px;
+    --radius-md:18px;
+    --radius-sm:12px;
+    --maxw:1200px;
+  }
+  *{box-sizing:border-box;-webkit-font-smoothing:antialiased;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--bg-0);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    font-weight:400;
+  }
+  h1,h2,h3{font-family:'Bebas Neue',sans-serif;font-weight:400;letter-spacing:-0.01em;margin:0;}
+  p{margin:0;}
+  a{color:inherit;text-decoration:none;}
+  img,video{max-width:100%;display:block;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 40px;}
+  @media (max-width:809.98px){.wrap{padding:0 18px;}}
+ 
+  /* NAV (Centered Menu, Brand Name Removed) */
+  header{position:sticky;top:0;z-index:50;background:rgba(7,8,7,0.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line-soft);}
+  nav.wrap{display:flex;align-items:center;justify-content:center;height:64px;}
+  .nav-links{display:flex;gap:32px;align-items:center;}
+  .nav-links a{font-size:13px;font-weight:500;color:var(--ink-dim);letter-spacing:0.03em;}
+  .nav-links a.accent{color:var(--accent);}
+  .nav-links a:hover{color:var(--ink);}
+  @media (max-width:809.98px){.nav-links{gap:18px;}.nav-links a{font-size:12px;}}
+ 
+  /* HERO (Two Columns Layout) */
+  .hero{padding:80px 0;background:radial-gradient(60% 60% at 50% 0%,#0c0e0c 0%,#070807 100%);}
+  .hero-grid{display:flex;align-items:center;gap:48px;}
+  .hero-left{flex:1.2;min-width:0;}
+  .hero-right{flex:0.8;min-width:0;display:flex;justify-content:center;}
+  
+  .badge{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--line);background:rgba(255,255,255,0.04);border-radius:999px;padding:8px 14px;margin-bottom:24px;}
+  .dot{width:8px;height:8px;border-radius:999px;background:var(--accent);flex:none;}
+  .badge span{font-size:11px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;color:var(--ink-faint);}
+  
+  /* Reduced Headings */
+  .hero h1{font-size:54px;line-height:1.0em;margin-bottom:20px;}
+  .hero p.lead{font-size:16px;line-height:1.6em;color:var(--ink-dim);margin-bottom:32px;}
+  
+  /* Image Container with Overlay Name Badge */
+  .hero-img-container{
+    position:relative;
+    width:100%;
+    max-width:380px;
+    aspect-ratio:4/5;
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius-md);
+    overflow:hidden;
+  }
+  .hero-img-container img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+  }
+  .image-name-badge{
+    position:absolute;
+    bottom:20px;
+    left:20px;
+    background:rgba(7,8,7,0.85);
+    backdrop-filter:blur(6px);
+    border:1px solid var(--accent);
+    padding:8px 16px;
+    border-radius:8px;
+  }
+  .image-name-badge span{
+    font-family:'Bebas Neue',sans-serif;
+    font-size:24px;
+    letter-spacing:0.04em;
+    color:var(--accent);
+    text-transform:uppercase;
+  }
+
+  @media (max-width:991.98px){
+    .hero-grid{flex-direction:column;gap:40px;text-align:center;}
+    .hero-right{width:100%;}
+    .badge{justify-content:center;}
+    .btn-row{justify-content:center;}
+    .image-name-badge{left:50%;transform:translateX(-50%);width:max-content;bottom:16px;}
+  }
+  @media (max-width:809.98px){
+    .hero h1{font-size:38px;}
+    .hero{padding:50px 0;}
+  }
+ 
+  .btn{display:inline-flex;align-items:center;justify-content:center;height:46px;padding:0 22px;border-radius:999px;font-weight:700;font-size:14px;letter-spacing:0.01em;cursor:pointer;border:1px solid transparent;}
+  .btn-primary{background:var(--accent);color:#07100a;}
+  .btn-secondary{background:#151515;border-color:var(--line);color:var(--ink);}
+  .btn-row{display:flex;gap:12px;flex-wrap:wrap;}
+  /* LinkedIn button only for Contact section */
+.contact-linkedin{
+    background:#0A66C2;
+    border:1px solid #0A66C2;
+    color:#fff;
+    transition:all .25s ease;
+}
+
+.contact-linkedin:hover{
+    background:#004182;
+    border-color:#004182;
+    color:#fff;
+    transform:translateY(-2px);
+    box-shadow:0 10px 25px rgba(10,102,194,.35);
+}
+
+.contact-linkedin svg{
+    width:18px;
+    height:18px;
+    flex-shrink:0;
+    margin-right:8px;
+}
+  
+ 
+  /* SECTION HEADERS */
+  section{padding:80px 0;}
+  .eyebrow{font-size:12px;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;}
+  .section-title{font-size:40px;line-height:1.05em;max-width:760px;margin-bottom:14px;}
+  .section-sub{font-size:15px;line-height:1.55em;color:var(--ink-faint);max-width:560px;}
+  @media (max-width:809.98px){.section-title{font-size:30px;}}
+ 
+  /* WORK / GALLERY SECTION */
+  .work-section{background:var(--bg-1);border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);}
+  .work-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:34px;}
+  .tabs{display:flex;gap:8px;flex-wrap:wrap;}
+  .tab{border:1px solid var(--line);background:transparent;color:var(--ink-dim);font-family:'Inter',sans-serif;font-size:13px;font-weight:600;padding:9px 16px;border-radius:999px;cursor:pointer;transition:all .15s ease;}
+  .tab:hover{border-color:var(--accent);color:var(--ink);}
+  .tab.active{background:var(--accent);border-color:var(--accent);color:#07100a;}
+ 
+  .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  @media (max-width:1199.98px){.gallery-grid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:809.98px){.gallery-grid{grid-template-columns:1fr;}}
+ 
+  .gcard{background:var(--card);border:1px solid var(--line-soft);border-radius:var(--radius-md);overflow:hidden;display:flex;flex-direction:column;transition:border-color .15s ease, transform .15s ease;}
+  .gcard:hover{border-color:rgba(215,255,63,0.4);transform:translateY(-2px);}
+  .gcard-media{position:relative;aspect-ratio:4/3;background:linear-gradient(135deg,#1c1f1a 0%,#0d0f0d 100%);display:flex;align-items:center;justify-content:center;overflow:hidden;}
+  .gcard-media img,.gcard-media video{width:100%;height:100%;object-fit:cover;}
+  .gcard-media.contain{background:#ffffff;}
+  .gcard-media.contain img{object-fit:contain;padding:28px;width:100%;height:100%;}
+  .gcard-placeholder{display:flex;flex-direction:column;align-items:center;gap:10px;color:rgba(247,247,240,0.28);}
+  .gcard-placeholder svg{width:30px;height:30px;}
+  .gcard-placeholder span{font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;}
+  .play-chip{position:absolute;bottom:12px;left:12px;display:flex;align-items:center;gap:6px;background:rgba(7,8,7,0.75);border:1px solid rgba(255,255,255,0.16);border-radius:999px;padding:6px 10px;font-size:11px;font-weight:700;color:var(--ink);}
+  .play-chip svg{width:10px;height:10px;}
+  .gcard-cat{position:absolute;top:12px;left:12px;background:rgba(7,8,7,0.75);border:1px solid rgba(255,255,255,0.16);border-radius:999px;padding:5px 10px;font-size:10px;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;color:var(--accent);}
+  .gcard-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px;flex:1;}
+  .gcard-title{font-family:'Inter',sans-serif;font-weight:700;font-size:15px;color:var(--ink);}
+  .gcard-desc{font-size:13px;line-height:1.5em;color:var(--ink-faint);}
+ 
+  .upload-note{margin-top:28px;border:1px dashed var(--line);border-radius:var(--radius-md);padding:18px 20px;font-size:13px;color:var(--ink-faint);line-height:1.6em;}
+  .upload-note strong{color:var(--ink);}
+ 
+  .gcard{cursor:pointer;}
+  .gcard--link .gcard-media{background:#0d0f0d;}
+  .gcard--link .gcard-media img{object-fit:contain;padding:20px;background:#0d0f0d;}
+  .img-count{position:absolute;bottom:12px;right:12px;background:rgba(7,8,7,0.75);border:1px solid rgba(255,255,255,0.16);border-radius:999px;padding:6px 10px;font-size:11px;font-weight:700;color:var(--ink);}
+ 
+  /* LIGHTBOX */
+  .lightbox{position:fixed;inset:0;z-index:200;background:rgba(5,6,5,0.94);display:none;align-items:center;justify-content:center;flex-direction:column;padding:24px;}
+  .lightbox.open{display:flex;}
+  .lb-top{width:100%;max-width:1000px;display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;}
+  .lb-title{font-family:'Inter',sans-serif;font-weight:700;font-size:15px;color:var(--ink);}
+  .lb-sub{font-size:12px;color:var(--ink-faint);margin-top:2px;}
+  .lb-close{width:38px;height:38px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,0.04);color:var(--ink);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;flex:none;}
+  .lb-close:hover{border-color:var(--accent);color:var(--accent);}
+  .lb-stage{position:relative;width:100%;max-width:1000px;flex:1;display:flex;align-items:center;justify-content:center;min-height:0;}
+  .lb-stage img,.lb-stage video{max-width:100%;max-height:62vh;border-radius:14px;object-fit:contain;}
+  .lb-arrow{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:999px;border:1px solid var(--line);background:rgba(7,8,7,0.75);color:var(--ink);font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;}
+  .lb-arrow:hover{border-color:var(--accent);color:var(--accent);}
+  .lb-arrow.prev{left:-4px;}
+  .lb-arrow.next{right:-4px;}
+  @media (max-width:809.98px){.lb-arrow{width:34px;height:34px;}.lb-arrow.prev{left:0;}.lb-arrow.next{right:0;}}
+  .lb-counter{margin-top:10px;font-size:12px;color:var(--ink-faint);}
+  .lb-thumbs{display:flex;gap:8px;overflow-x:auto;max-width:1000px;width:100%;margin-top:14px;padding-bottom:4px;}
+  .lb-thumb{width:64px;height:48px;flex:none;border-radius:8px;overflow:hidden;border:2px solid transparent;cursor:pointer;opacity:0.5;}
+  .lb-thumb.active{border-color:var(--accent);opacity:1;}
+  .lb-thumb img,.lb-thumb video{width:100%;height:100%;object-fit:cover;}
+ 
+  /* CERTIFICATIONS SECTION */
+  .certs-section{background:var(--bg-0);border-bottom:1px solid var(--line-soft);}
+  .certs-inner{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+  @media(max-width:1199.98px){.certs-inner{gap:40px;}}
+  @media(max-width:809.98px){.certs-inner{grid-template-columns:1fr;gap:32px;}}
+  .certs-left{}
+  .certs-list{display:flex;flex-direction:column;gap:8px;margin-top:22px;}
+  .cert-item{display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:12px;border:1px solid transparent;cursor:pointer;transition:all .15s ease;}
+  .cert-item:hover,.cert-item.active{background:rgba(215,255,63,0.06);border-color:rgba(215,255,63,0.2);}
+  .cert-dot{width:7px;height:7px;border-radius:999px;background:var(--line);flex:none;transition:background .15s;}
+  .cert-item.active .cert-dot{background:var(--accent);}
+  .cert-item span{font-size:14px;font-weight:600;color:var(--ink-dim);transition:color .15s;}
+  .cert-item.active span{color:var(--ink);}
+ 
+  .certs-right{position:relative;}
+  .cert-slider{position:relative;border:1px solid var(--line-soft);border-radius:20px;overflow:hidden;background:var(--card);aspect-ratio:4/3;cursor:pointer;}
+  .cert-slider img{width:100%;height:100%;object-fit:contain;padding:16px;display:none;}
+  .cert-slider img.active{display:block;}
+  .cert-slider:hover .cert-overlay{opacity:1;}
+  .cert-overlay{position:absolute;inset:0;background:rgba(7,8,7,0.55);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .2s;border-radius:20px;}
+  .cert-overlay span{font-size:13px;font-weight:700;color:var(--ink);border:1px solid var(--line);background:rgba(7,8,7,0.6);padding:8px 16px;border-radius:999px;}
+  .cert-nav{display:flex;align-items:center;justify-content:space-between;margin-top:14px;}
+  .cert-arrows{display:flex;gap:8px;}
+  .cert-arrow{width:36px;height:36px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--ink);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .15s;}
+  .cert-arrow:hover{border-color:var(--accent);color:var(--accent);}
+  .cert-counter-label{font-size:12px;color:var(--ink-faint);}
+  .cert-dots{display:flex;gap:6px;align-items:center;}
+  .cert-dot-btn{width:6px;height:6px;border-radius:999px;background:var(--line);border:none;cursor:pointer;padding:0;transition:all .15s;}
+  .cert-dot-btn.active{background:var(--accent);width:18px;}
+ 
+  /* CAPABILITIES */
+  .cap-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px;}
+  @media (max-width:1199.98px){.cap-grid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:809.98px){.cap-grid{grid-template-columns:1fr;}}
+  .cap-card{background:var(--card);border:1px solid var(--line-soft);border-radius:24px;padding:24px;}
+  .cap-icon{width:44px;height:44px;border-radius:14px;background:var(--accent);display:flex;align-items:center;justify-content:center;margin-bottom:18px;}
+  .cap-icon svg{width:22px;height:22px;stroke:#07100a;}
+  .cap-label{font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:6px;display:block;}
+  .cap-title{font-family:'Inter',sans-serif;font-weight:700;font-size:21px;margin-bottom:10px;}
+  .cap-desc{font-size:14px;line-height:1.5em;color:var(--ink-dim);}
+ 
+  /* CONTACT */
+  .contact-card{border:1px solid var(--line-soft);border-radius:30px;background:radial-gradient(50% 50% at 80% 0,rgba(215,255,63,0.22) 0%,rgba(17,19,17,0) 34%);padding:34px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;}
+  .contact-card h2{font-size:36px;line-height:1.07em;max-width:680px;margin-bottom:12px;font-family:'Inter',sans-serif;font-weight:800;letter-spacing:-0.02em;}
+  .contact-card p{font-size:14px;color:var(--ink-dim);}
+ 
+  footer{padding:32px 0 44px;}
+  .footer-row{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;border-top:1px solid var(--line-soft);padding-top:24px;}
+  .footer-row p{font-size:13px;color:var(--ink-faint);}
+</style>
+</head>
+<body>
+ 
+<header>
+  <nav class="wrap">
+    <!-- Centered navigation list (Brand name successfully removed) -->
+    <div class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact" class="accent">Contact</a>
+    </div>
+  </nav>
+</header>
+ 
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      
+      <!-- Left Hand Side: Copy Content -->
+      <div class="hero-left">
+        <div class="badge"><span class="dot"></span><span>Digital Marketing Manager • SEO • SEM • Paid Media • Property Shoots</span></div>
+        <h1 style="text-transform: uppercase;">I drive growth through strategy, <span style="color: var(--accent);">media &amp; automation.</span></h1>
+        <p class="lead">Digital marketing professional with 7+ years of experience across UAE real estate and e-commerce. I lead full-funnel strategy across Meta Ads, Google Ads, SEO, CRM, automation, and high-performing property photo/video content.</p>
+        <div class="btn-row">
+          <a href="#work" class="btn btn-primary">View work</a>
+          <a href="#contact" class="btn btn-secondary">Let's talk</a>
+        </div>
+      </div>
+      
+      <!-- Right Hand Side: Profile Picture Box -->
+      <div class="hero-right">
+        <div class="hero-img-container">
+          <!-- 💡 REPLACE THE 'src' VALUE BELOW WITH YOUR IMAGE PATH (e.g. media/profile.jpg) -->
+          <img src="media/profile-placeholder.png" alt="Muhammad Huzaifa">
+          
+          <!-- Highlighted Name Text Badge over Image -->
+          <div class="image-name-badge">
+            <span>Muhammad Huzaifa</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+ 
+<!-- ============ CERTIFICATIONS ============ -->
+<section class="certs-section" id="certifications">
+  <div class="wrap" style="padding-top:80px;padding-bottom:80px;">
+    <div class="certs-inner">
+      <div class="certs-left">
+        <p class="eyebrow">Certifications</p>
+        <h2 class="section-title" style="max-width:480px;">Verified skills backed by globally recognised credentials.</h2>
+        <p class="section-sub" style="margin-top:12px;">Click any certificate to view it in full. Use arrows or select from the list to browse all 8 certifications.</p>
+        <div class="certs-list" id="certList"></div>
+      </div>
+      <div class="certs-right">
+        <div class="cert-slider" id="certSlider">
+          <div class="cert-overlay"><span>View certificate</span></div>
+        </div>
+        <div class="cert-nav">
+          <div class="cert-dots" id="certDots"></div>
+          <div style="display:flex;align-items:center;gap:12px;">
+            <span class="cert-counter-label" id="certCounterLabel">1 / 8</span>
+            <div class="cert-arrows">
+              <button class="cert-arrow" id="certPrev">‹</button>
+              <button class="cert-arrow" id="certNext">›</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ============ WORK / REAL EXAMPLES GALLERY ============ -->
+<section class="work-section" id="work">
+  <div class="wrap">
+    <div class="work-head">
+      <div>
+        <p class="eyebrow">Selected work</p>
+        <h2 class="section-title">Real campaigns, properties, and builds — not mockups.</h2>
+        <p class="section-sub">Filter by category. Swap the placeholder cards below for your actual images, videos, and screenshots — see the note at the bottom for how.</p>
+      </div>
+      <div class="tabs" id="tabs">
+        <button class="tab active" data-filter="all">All</button>
+        <button class="tab" data-filter="property">Property</button>
+        <button class="tab" data-filter="web">Web</button>
+        <button class="tab" data-filter="campaigns">Campaigns</button>
+        <button class="tab" data-filter="video">Video</button>
+      </div>
+    </div>
+ 
+    <div class="gallery-grid" id="gallery"></div>
+</section>
+ 
+<!-- LIGHTBOX (gallery popup) -->
+<div class="lightbox" id="lightbox">
+  <div class="lb-top">
+    <div>
+      <div class="lb-title" id="lbTitle"></div>
+      <div class="lb-sub" id="lbSub"></div>
+    </div>
+    <button class="lb-close" id="lbClose">✕</button>
+  </div>
+  <div class="lb-stage">
+    <button class="lb-arrow prev" id="lbPrev">‹</button>
+    <div id="lbMediaWrap"></div>
+    <button class="lb-arrow next" id="lbNext">›</button>
+  </div>
+  <div class="lb-counter" id="lbCounter"></div>
+  <div class="lb-thumbs" id="lbThumbs"></div>
+</div>
+ 
+<!-- ============ CAPABILITIES ============ -->
+<section id="services">
+  <div class="wrap">
+    <p class="eyebrow">Capabilities</p>
+    <h2 class="section-title">One portfolio for creative production and measurable growth.</h2>
+    <div class="cap-grid">
+      <div class="cap-card">
+        <div class="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16"/><path d="M7 17l3-3 4 4 6-6"/></svg></div>
+        <span class="cap-label">Acquisition</span>
+        <div class="cap-title">Paid Media</div>
+        <p class="cap-desc">Meta Ads, Google Ads, campaign budget planning, ROI reporting, Search Ads 360, Facebook Pixel, and GA4.</p>
+      </div>
+      <div class="cap-card">
+        <div class="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><circle cx="12" cy="13" r="3"/></svg></div>
+        <span class="cap-label">Visuals</span>
+        <div class="cap-title">Property Media</div>
+        <p class="cap-desc">Property photography, videography, Lightroom editing, CapCut Pro reels, and market-ready listing visuals.</p>
+      </div>
+      <div class="cap-card">
+        <div class="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></div>
+        <span class="cap-label">Search</span>
+        <div class="cap-title">SEO, SEM &amp; Web</div>
+        <p class="cap-desc">SEO and SEM strategy, WordPress development, e-commerce operations, UX improvements, and organic growth systems.</p>
+      </div>
+      <div class="cap-card">
+        <div class="cap-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="2"/><path d="M7 11v6a2 2 0 0 0 2 2h6"/><rect x="13" y="13" width="8" height="8" rx="2"/></svg></div>
+        <span class="cap-label">Systems</span>
+        <div class="cap-title">CRM &amp; Automation</div>
+        <p class="cap-desc">Lead generation, nurturing, Zapier and Make.com automation, DoubleTick WhatsApp campaigns, Mailchimp, and CRM management.</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience" style="background:var(--bg-1);border-top:1px solid var(--line-soft);">
+  <div class="wrap">
+    <p class="eyebrow">Experience</p>
+    <h2 class="section-title">Real estate performance marketing, e-commerce growth, and creative production.</h2>
+    <p class="section-sub" style="margin-bottom:34px;">7+ years across UAE real estate and e-commerce, combining paid acquisition, SEO, CRM, automation, and property media.</p>
+ 
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:14px;margin-bottom:34px;">
+      <div class="cap-card" style="padding:18px;"><div style="font-family:'Bebas Neue';font-size:48px;color:var(--accent);line-height:0.9em;">300%</div><p class="gcard-desc" style="margin-top:8px;">Revenue growth from an e-commerce store built from scratch.</p></div>
+      <div class="cap-card" style="padding:18px;"><div style="font-family:'Bebas Neue';font-size:48px;color:var(--accent);line-height:0.9em;">2x</div><p class="gcard-desc" style="margin-top:8px;">Return on ad spend across Meta and Google campaigns.</p></div>
+      <div class="cap-card" style="padding:18px;"><div style="font-family:'Bebas Neue';font-size:48px;color:var(--accent);line-height:0.9em;">150+</div><p class="gcard-desc" style="margin-top:8px;">Qualified property leads generated per month.</p></div>
+      <div class="cap-card" style="padding:18px;"><div style="font-family:'Bebas Neue';font-size:48px;color:var(--accent);line-height:0.9em;">40%</div><p class="gcard-desc" style="margin-top:8px;">Reduction in manual tasks with CRM and automation workflows.</p></div>
+      <div class="cap-card" style="padding:18px;"><div style="font-family:'Bebas Neue';font-size:48px;color:var(--accent);line-height:0.9em;">SFA</div><p class="gcard-desc" style="margin-top:8px;">Company-wide Sales Force Automation rollout.</p></div>
+    </div>
+ 
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <div class="cap-card" style="display:flex;gap:26px;flex-wrap:wrap;">
+        <p style="width:160px;font-family:'Bebas Neue';font-size:12px;letter-spacing:0.08em;color:var(--accent);text-transform:uppercase;">Jun 2025 — Present</p>
+        <div style="flex:1;min-width:240px;"><p style="font-weight:800;font-size:19px;margin-bottom:8px;">Marketing Specialist — Phoenix Homes Real Estate, Dubai</p><p class="gcard-desc">Leads paid media strategy across Meta and Google, generates 150+ qualified property leads per month, produces property photo/video assets, edits listing visuals, and automates CRM and nurturing workflows with Zapier, Make.com, DoubleTick, and Mailchimp.</p></div>
+      </div>
+      <div class="cap-card" style="display:flex;gap:26px;flex-wrap:wrap;">
+        <p style="width:160px;font-family:'Bebas Neue';font-size:12px;letter-spacing:0.08em;color:var(--accent);text-transform:uppercase;">Jan 2025 — May 2025</p>
+        <div style="flex:1;min-width:240px;"><p style="font-weight:800;font-size:19px;margin-bottom:8px;">Digital Marketing Executive — Tekkr Real Estate, Dubai</p><p class="gcard-desc">Managed end-to-end paid campaigns, social content, property media production, WordPress SEO, Mailchimp campaigns, and search strategies to grow qualified traffic and engagement.</p></div>
+      </div>
+      <div class="cap-card" style="display:flex;gap:26px;flex-wrap:wrap;">
+        <p style="width:160px;font-family:'Bebas Neue';font-size:12px;letter-spacing:0.08em;color:var(--accent);text-transform:uppercase;">May 2024 — Dec 2024</p>
+        <div style="flex:1;min-width:240px;"><p style="font-weight:800;font-size:19px;margin-bottom:8px;">Digital Marketing Executive — Prestige Edition Real Estate, Dubai</p><p class="gcard-desc">Executed Google and Meta campaigns, produced premium property photography and video, created Photoshop assets, maintained WordPress SEO, and managed email and social campaigns.</p></div>
+      </div>
+      <div class="cap-card" style="display:flex;gap:26px;flex-wrap:wrap;">
+        <p style="width:160px;font-family:'Bebas Neue';font-size:12px;letter-spacing:0.08em;color:var(--accent);text-transform:uppercase;">Aug 2018 — Dec 2023</p>
+        <div style="flex:1;min-width:240px;"><p style="font-weight:800;font-size:19px;margin-bottom:8px;">Assistant Manager, IT &amp; Marketing Support — Global Brands Marketing, Meiji Pakistan</p><p class="gcard-desc">Built and optimized the e-commerce store, grew online revenue by 300%, implemented SFA, managed WordPress, SEO/SEM, email, social, Facebook Pixel, analytics dashboards, and customer support channels.</p></div>
+      </div>
+    </div>
+ 
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin-top:34px;">
+      <div class="cap-card"><div class="cap-title" style="font-size:18px;">Core tools</div><p class="gcard-desc" style="margin-top:8px;">Meta Ads, Google Ads, Search Ads 360, SEO, SEM, WordPress, Facebook Pixel, GA4, Mailchimp, DoubleTick, Zapier, Make.com, CRM, Photoshop, Lightroom, CapCut Pro.</p></div>
+      <div class="cap-card"><div class="cap-title" style="font-size:18px;">Education</div><p class="gcard-desc" style="margin-top:8px;">BS Computer Science, ILMA University — CGPA 3.0. Intermediate in Computer Science, SSAT Degree College.</p></div>
+      <div class="cap-card"><div class="cap-title" style="font-size:18px;">Certifications</div><p class="gcard-desc" style="margin-top:8px;">Google Digital Marketing &amp; E-Commerce, HubSpot Digital Marketing, Google Search Ads 360, Coursera Facebook Ads, Digiskills Digital Marketing, MCSA, and CIT.</p></div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-card">
+      <div>
+        <h2>Let's build something that delivers real results.</h2>
+        <p>Whether you're looking to hire a Digital Marketing Manager, collaborate on a project, or grow your business through performance marketing, SEO, paid advertising, automation, web development, and creative content, I'd love to hear from you.</p>
+        <div class="btn-row" style="margin-top:24px;">
+
+    <a href="mailto:m.huzaifa.imtiaz@hotmail.com" class="btn btn-primary">
+        📧 Email Me
+    </a>
+
+    <a href="https://wa.me/971501739887" target="_blank" class="btn btn-secondary">
+        💬 WhatsApp
+    </a>
+
+    <a href="tel:+971501739887" class="btn btn-secondary">
+        📞 Call Me
+    </a>
+
+    <a href="https://www.linkedin.com/in/huzaifa-digitalmarketing/" target="_blank" class="btn contact-linkedin">
+        <svg xmlns="http://www.w3.org/2000/svg"
+             width="16"
+             height="16"
+             viewBox="0 0 24 24"
+             fill="currentColor"
+             style="margin-right:8px;">
+            <path d="M4.98 3.5C4.98 4.88 3.86 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5zM0 8h5v16H0V8zm7.5 0h4.8v2.19h.07c.67-1.27 2.31-2.6 4.76-2.6 5.09 0 6.03 3.35 6.03 7.71V24h-5v-7.68c0-1.83-.03-4.18-2.55-4.18-2.55 0-2.94 1.99-2.94 4.05V24h-5V8z"/>
+        </svg>
+        LinkedIn
+    </a>
+
+</div>
+
+<p style="margin-top:22px;color:var(--ink-faint);font-size:14px;">
+    📍 Dubai, UAE &nbsp;•&nbsp;
+    📞 +971 50 173 9887 &nbsp;•&nbsp;
+    📧 m.huzaifa.imtiaz@hotmail.com
+</p>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<script>
+const workItems = [
+  {
+    category: "property",
+    title: "Emirates Hills",
+    desc: "Full interior and exterior photo set.",
+    cover: "",
+    images: [
+      { type:"image", src:"media/Emirates Hills/1.jpeg" },
+      { type:"image", src:"media/Emirates Hills/2.jpeg" },
+      { type:"image", src:"media/Emirates Hills/3.jpeg" },
+      { type:"image", src:"media/Emirates Hills/4.jpeg" },
+      { type:"image", src:"media/Emirates Hills/5.jpeg" },
+      { type:"image", src:"media/Emirates Hills/6.jpeg" },
+      { type:"image", src:"media/Emirates Hills/7.jpeg" },
+      { type:"image", src:"media/Emirates Hills/8.jpeg" },
+      { type:"image", src:"media/Emirates Hills/9.jpeg" },
+      { type:"image", src:"media/Emirates Hills/10.jpeg" }
+    ]
+  },
+  {
+    category: "property",
+    title: "1 Zabeel",
+    desc: "Interior photo set.",
+    cover: "",
+    images: [
+      { type:"image", src:"media/1 Zabeel/zabeel1.jpg" },
+      { type:"image", src:"media/1 Zabeel/zabeel2.jpg" },
+      { type:"image", src:"media/1 Zabeel/zabeel3.jpg" },
+      { type:"image", src:"media/1 Zabeel/zabeel4.jpg" },
+      { type:"image", src:"media/1 Zabeel/zabeel5.jpg" },
+      { type:"image", src:"media/1 Zabeel/zabeel6.jpg" },
+      { type:"image", src:"media/1 Zabeel/zabeel7.jpg" },
+      { type:"image", src:"media/1 Zabeel/zabeel8.jpg" },
+      { type:"image", src:"media/1 Zabeel/zabeel9.jpg" },
+      { type:"image", src:"media/1 Zabeel/zabeel10.jpg" },
+      { type:"image", src:"media/1 Zabeel/zabeel11.jpg" }
+    ]
+  },
+  {
+    category: "property",
+    title: "Creek Harbour",
+    desc: "Full interior photo set.",
+    cover: "",
+    images: [
+      { type:"image", src:"media/Creek Harbour/1.jpg" },
+      { type:"image", src:"media/Creek Harbour/2.jpg" },
+      { type:"image", src:"media/Creek Harbour/3.jpg" },
+      { type:"image", src:"media/Creek Harbour/4.jpg" },
+      { type:"image", src:"media/Creek Harbour/5.jpg" },
+      { type:"image", src:"media/Creek Harbour/6.jpg" },
+      { type:"image", src:"media/Creek Harbour/7.jpg" },
+      { type:"image", src:"media/Creek Harbour/8.jpg" },
+      { type:"image", src:"media/Creek Harbour/9.jpg" },
+      { type:"image", src:"media/Creek Harbour/10.jpg" },
+      { type:"image", src:"media/Creek Harbour/11.jpg" },
+      { type:"image", src:"media/Creek Harbour/12.jpg" },
+      { type:"image", src:"media/Creek Harbour/13.jpg" },
+      { type:"image", src:"media/Creek Harbour/14.jpg" },
+      { type:"image", src:"media/Creek Harbour/15.jpg" },
+      { type:"image", src:"media/Creek Harbour/16.jpg" },
+      { type:"image", src:"media/Creek Harbour/17.jpg" },
+      { type:"image", src:"media/Creek Harbour/18.jpg" },
+      { type:"image", src:"media/Creek Harbour/19.jpg" },
+      { type:"image", src:"media/Creek Harbour/20.jpg" },
+      { type:"image", src:"media/Creek Harbour/21.jpg" },
+      { type:"image", src:"media/Creek Harbour/22.jpg" },
+      { type:"image", src:"media/Creek Harbour/23.jpg" }
+    ]
+  },
+  {
+    category: "property",
+    title: "Meadows 5",
+    desc: "Full interior and exterior photo set.",
+    cover: "",
+    images: [
+      { type:"image", src:"media/Meadows 5/1.jpg" },
+      { type:"image", src:"media/Meadows 5/2.jpg" },
+      { type:"image", src:"media/Meadows 5/3.jpg" },
+      { type:"image", src:"media/Meadows 5/4.jpg" },
+      { type:"image", src:"media/Meadows 5/5.jpg" },
+      { type:"image", src:"media/Meadows 5/6.jpg" },
+      { type:"image", src:"media/Meadows 5/7.jpg" },
+      { type:"image", src:"media/Meadows 5/8.jpg" },
+      { type:"image", src:"media/Meadows 5/9.jpg" },
+      { type:"image", src:"media/Meadows 5/10.jpg" },
+      { type:"image", src:"media/Meadows 5/11.jpg" },
+      { type:"image", src:"media/Meadows 5/12.jpg" },
+      { type:"image", src:"media/Meadows 5/13.jpg" },
+      { type:"image", src:"media/Meadows 5/14.jpg" },
+      { type:"image", src:"media/Meadows 5/15.jpg" },
+      { type:"image", src:"media/Meadows 5/16.jpg" }
+    ]
+  },
+  {
+    category: "web",
+    title: "ToolMint",
+    desc: "Founder & Developer • AI-powered productivity platform featuring 30+ free online tools for SEO professionals, developers, marketers, designers, students, and businesses. Built from the ground up with a strong focus on performance, user experience, accessibility, and technical SEO.",
+    cover: "media/toolmint.webp",
+    coverFit: "contain",
+    url: "https://www.tool-mint.com/",
+    images: []
+  },
+  {
+    category: "web",
+    title: "Tulpar Tax",
+    desc: "Live website — click to visit.",
+    cover: "media/TGT.png",
+    coverFit: "contain",
+    url: "https://tulpartax.com/",
+    images: []
+  },
+  {
+    category: "web",
+    title: "EV Bolt",
+    desc: "Live website — click to visit.",
+    cover: "media/EV BOLT.png",
+    coverFit: "contain",
+    url: "https://evbolt.com/",
+    images: []
+  },
+  {
+    category: "campaigns",
+    title: "Meta Ads — Lead Gen Results",
+    desc: "150+ qualified leads/month at 2x ROAS.",
+    cover: "",
+    images: [
+      { type:"image", src:"media/Meta Campaigns/meta 1.png" },
+      { type:"image", src:"media/Meta Campaigns/meta 2.png" },
+      { type:"image", src:"media/Meta Campaigns/meta 3.png" }
+    ]
+  },
+  {
+    category: "video",
+    title: "Creek Harbour",
+    desc: "Property walkthrough video.",
+    cover: "",
+    images: [
+      { type:"video", src:"media/Videos/Creek Harbour.mp4" }
+    ]
+  }
+];
+ 
+const gallery = document.getElementById('gallery');
+const tabs = document.querySelectorAll('.tab');
+ 
+function placeholderIcon(){
+  return '<svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>';
+}
+ 
+function linkIcon(){
+  return '<svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.07 0l2.83-2.83a5 5 0 0 0-7.07-7.07L11.5 4.5"/><path d="M14 11a5 5 0 0 0-7.07 0L4.1 13.83a5 5 0 0 0 7.07 7.07l1.36-1.36"/></svg>';
+}
+ 
+function render(filter){
+  gallery.innerHTML = '';
+  const items = filter === 'all' ? workItems : workItems.filter(i => i.category === filter);
+ 
+  items.forEach((proj) => {
+    const realIndex = workItems.indexOf(proj);
+    const cover = proj.cover || (proj.images[0] ? proj.images[0].src : '');
+    const isVideo = proj.images[0] && proj.images[0].type === 'video' && !proj.cover;
+    const count = proj.images.length;
+ 
+    const card = document.createElement('div');
+    card.className = 'gcard' + (proj.url ? ' gcard--link' : '');
+    if(proj.url){
+      card.addEventListener('click', () => window.open(proj.url, '_blank', 'noopener'));
+    } else {
+      card.addEventListener('click', () => openLightbox(realIndex));
+    }
+ 
+    let mediaInner;
+    if(cover){
+      mediaInner = isVideo
+        ? `<video src="${cover}" muted loop playsinline></video>`
+        : `<img src="${cover}" alt="${proj.title}" loading="lazy">`;
+    } else if(proj.url){
+      mediaInner = `<div class="gcard-placeholder">${linkIcon()}<span>Visit site</span></div>`;
+    } else {
+      mediaInner = `<div class="gcard-placeholder">${placeholderIcon()}<span>Add images</span></div>`;
+    }
+ 
+    card.innerHTML = `
+      <div class="gcard-media${proj.coverFit === 'contain' ? ' contain' : ''}">
+        <span class="gcard-cat">${proj.category}</span>
+        ${count > 0 ? `<span class="img-count">${count} ${count === 1 ? 'item' : 'items'}</span>` : ''}
+        ${proj.url ? `<span class="play-chip">${linkIcon()}Live site</span>` : ''}
+        ${mediaInner}
+      </div>
+      <div class="gcard-body">
+        <div class="gcard-title">${proj.title}</div>
+        <div class="gcard-desc">${proj.desc}</div>
+      </div>
+    `;
+    gallery.appendChild(card);
+  });
+}
+ 
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(t => t.classList.remove('active'));
+    tab.classList.add('active');
+    render(tab.dataset.filter);
+  });
+});
+ 
+/* ---------- LIGHTBOX ---------- */
+const lightbox = document.getElementById('lightbox');
+const lbTitle = document.getElementById('lbTitle');
+const lbSub = document.getElementById('lbSub');
+const lbMediaWrap = document.getElementById('lbMediaWrap');
+const lbCounter = document.getElementById('lbCounter');
+const lbThumbs = document.getElementById('lbThumbs');
+const lbClose = document.getElementById('lbClose');
+const lbPrev = document.getElementById('lbPrev');
+const lbNext = document.getElementById('lbNext');
+ 
+let activeProjectIndex = null;
+let activeImageIndex = 0;
+ 
+function openLightbox(projectIndex){
+  const proj = workItems[projectIndex];
+  if(!proj.images.length) return;
+  activeProjectIndex = projectIndex;
+  activeImageIndex = 0;
+  lbTitle.textContent = proj.title;
+  lbSub.textContent = proj.desc;
+  renderThumbs();
+  renderStage();
+  lightbox.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+ 
+function closeLightbox(){
+  lightbox.classList.remove('open');
+  document.body.style.overflow = '';
+}
+ 
+function renderStage(){
+  const proj = workItems[activeProjectIndex];
+  const item = proj.images[activeImageIndex];
+  lbMediaWrap.innerHTML = item.type === 'video'
+    ? `<video src="${item.src}" controls autoplay></video>`
+    : `<img src="${item.src}" alt="${proj.title}">`;
+  lbCounter.textContent = `${activeImageIndex + 1} / ${proj.images.length}`;
+  document.querySelectorAll('.lb-thumb').forEach((t, i) => t.classList.toggle('active', i === activeImageIndex));
+}
+ 
+function renderThumbs(){
+  const proj = workItems[activeProjectIndex];
+  lbThumbs.innerHTML = proj.images.map((item, i) => `
+    <div class="lb-thumb ${i === 0 ? 'active' : ''}" data-i="${i}">
+      ${item.type === 'video' ? `<video src="${item.src}" muted></video>` : `<img src="${item.src}">`}
+    </div>
+  `).join('');
+  lbThumbs.querySelectorAll('.lb-thumb').forEach(t => {
+    t.addEventListener('click', () => {
+      activeImageIndex = parseInt(t.dataset.i, 10);
+      renderStage();
+    });
+  });
+}
+ 
+function step(dir){
+  const proj = workItems[activeProjectIndex];
+  activeImageIndex = (activeImageIndex + dir + proj.images.length) % proj.images.length;
+  renderStage();
+}
+ 
+lbClose.addEventListener('click', closeLightbox);
+lbPrev.addEventListener('click', () => step(-1));
+lbNext.addEventListener('click', () => step(1));
+lightbox.addEventListener('click', (e) => { if(e.target === lightbox) closeLightbox(); });
+document.addEventListener('keydown', (e) => {
+  if(!lightbox.classList.contains('open')) return;
+  if(e.key === 'Escape') closeLightbox();
+  if(e.key === 'ArrowLeft') step(-1);
+  if(e.key === 'ArrowRight') step(1);
+});
+ 
+render('all');
+ 
+/* ===================================================================
+   CERTIFICATIONS DATA
+=================================================================== */
+const certs = [
+  { title:"One Million Prompters", src:"media/Certificates/One Million Prompters.png" },
+  { title:"Google Search", src:"media/Certificates/Google Search.png" },
+  { title:"Google Digital Marketing & E-Commerce", src:"media/Certificates/Google Digital.png" },
+  { title:"Google Search Leads",                   src:"media/Certificates/Google Leads.png"   },
+  { title:"Harvard — Facebook Marketing",          src:"media/Certificates/Harvard Facebook.png"},
+  { title:"Digital Marketing",                     src:"media/Certificates/Digital Marketing.jpeg"},
+  { title:"FDME",                                  src:"media/Certificates/FDME.png"            },
+  { title:"CIT",                                   src:"media/Certificates/CIT.jpeg"            },
+  { title:"CCNA",                                  src:"media/Certificates/CCNA.jpeg"           },
+  { title:"MCSA 2016",                             src:"media/Certificates/MCSA 2016.jpeg"      },
+];
+ 
+let certIndex = 0;
+const certSlider  = document.getElementById('certSlider');
+const certList    = document.getElementById('certList');
+const certDots    = document.getElementById('certDots');
+const certPrev    = document.getElementById('certPrev');
+const certNext    = document.getElementById('certNext');
+const certCounter = document.getElementById('certCounterLabel');
+ 
+certs.forEach((c, i) => {
+  const img = document.createElement('img');
+  img.src = c.src;
+  img.alt = c.title;
+  if(i === 0) img.classList.add('active');
+  certSlider.appendChild(img);
+});
+ 
+certs.forEach((c, i) => {
+  const item = document.createElement('div');
+  item.className = 'cert-item' + (i === 0 ? ' active' : '');
+  item.innerHTML = `<span class="cert-dot"></span><span>${c.title}</span>`;
+  item.addEventListener('click', () => goToCert(i));
+  certList.appendChild(item);
+});
+ 
+certs.forEach((c, i) => {
+  const dot = document.createElement('button');
+  dot.className = 'cert-dot-btn' + (i === 0 ? ' active' : '');
+  dot.addEventListener('click', () => goToCert(i));
+  certDots.appendChild(dot);
+});
+ 
+function goToCert(i){
+  const imgs  = certSlider.querySelectorAll('img');
+  const items = certList.querySelectorAll('.cert-item');
+  const dots  = certDots.querySelectorAll('.cert-dot-btn');
+  imgs[certIndex].classList.remove('active');
+  items[certIndex].classList.remove('active');
+  dots[certIndex].classList.remove('active');
+  certIndex = i;
+  imgs[certIndex].classList.add('active');
+  items[certIndex].classList.add('active');
+  dots[certIndex].classList.add('active');
+  certCounter.textContent = `${certIndex + 1} / ${certs.length}`;
+}
+ 
+certPrev.addEventListener('click', () => goToCert((certIndex - 1 + certs.length) % certs.length));
+certNext.addEventListener('click', () => goToCert((certIndex + 1) % certs.length));
+ 
+certSlider.addEventListener('click', () => {
+  const imgs = Array.from(certSlider.querySelectorAll('img'));
+  const tempProj = {
+    title: "Certifications",
+    desc: certs[certIndex].title,
+    images: certs.map(c => ({ type:"image", src:c.src }))
+  };
+  const tempIdx = workItems.length;
+  workItems.push(tempProj);
+  activeProjectIndex = tempIdx;
+  activeImageIndex = certIndex;
+  lbTitle.textContent = tempProj.title;
+  lbSub.textContent = certs[certIndex].title;
+  renderThumbs();
+  renderStage();
+  lightbox.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  lbClose.addEventListener('click', () => workItems.splice(tempIdx,1), {once:true});
+  lightbox.addEventListener('click', (e)=>{ if(e.target===lightbox) workItems.splice(tempIdx,1); },{once:true});
+});
+</script>
+ 
+</body>
+</html>
