@@ -138,14 +138,14 @@ const workItems = [
 ];
 
 const certs = [
-  { title:"One Million Prompters", src:"media/certificates/One Million Prompters.png" },
-  { title:"Google Search",        src:"media/certificates/Google Search.png" },
-  { title:"Google Digital Marketing & E-Commerce", src:"media/certificates/Google Digital.png" },
-  { title:"Google Search Leads",  src:"media/certificates/Google Leads.png" },
-  { title:"Harvard — Facebook Marketing", src:"media/certificates/Harvard Facebook.png" },
-  { title:"Digital Marketing",    src:"media/certificates/Digital Marketing.jpeg" },
-  { title:"FDME",                 src:"media/certificates/FDME.png" },
-  { title:"CIT",                  src:"media/certificates/CIT.jpeg" },
-  { title:"CCNA",                 src:"media/certificates/CCNA.jpeg" },
-  { title:"MCSA 2016",            src:"media/certificates/MCSA 2016.jpeg" },
+  { title:"One Million Prompters",                 src:"media/certificates/one-million-prompters.png" },
+  { title:"Google Search",                         src:"media/certificates/google-search.png" },
+  { title:"Google Digital Marketing & E-Commerce", src:"media/certificates/google-digital.png" },
+  { title:"Google Search Leads",                   src:"media/certificates/google-leads.png" },
+  { title:"Harvard — Facebook Marketing",          src:"media/certificates/harvard-facebook.png" },
+  { title:"Digital Marketing",                     src:"media/certificates/digital-marketing.jpeg" },
+  { title:"FDME",                                  src:"media/certificates/fdme.png" },
+  { title:"CIT",                                   src:"media/certificates/cit.jpeg" },
+  { title:"CCNA",                                  src:"media/certificates/ccna.jpeg" },
+  { title:"MCSA 2016",                             src:"media/certificates/mcsa-2016.jpeg" },
 ];
