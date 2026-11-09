@@ -100,7 +100,7 @@ const workItems = [
   {
     category: "web",
     title: "ToolMint",
-    desc: "Founder & Developer • AI-powered productivity platform featuring 30+ free online tools for SEO professionals, developers, marketers, designers, students, and businesses. Built from the ground up with a strong focus on performance, user experience, accessibility, and technical SEO.",
+    desc: "Founder & Developer • AI-powered productivity platform featuring 90+ free online tools for SEO professionals, developers, marketers, designers, students, and businesses. Built from the ground up with a strong focus on performance, user experience, accessibility, and technical SEO.",
     cover: "media/web/toolmint.webp",
     coverFit: "contain",
     url: "https://www.tool-mint.com/",
